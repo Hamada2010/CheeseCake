@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Your Cheesecake</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('order') }}">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- Order Page Main Content -->
+    <header>
+        <h1>Order Your Favorite Cheesecake!</h1>
+        <p>Select from our varieties and proceed with payment.</p>
+    </header>
+
+    <!-- Cheesecake Varieties and Pricing -->
+    <section class="varieties">
+        <h2>Our Cheesecake Varieties</h2>
+        <div class="cheesecake-list">
+            <div class="cheesecake-item" id="cheesecake1">
+                <img src="{{ url_for('static', filename='images/cheesecake1.jpg') }}" alt="Classic Cheesecake">
+                <h3>Classic Cheesecake</h3>
+                <p>A timeless favorite, creamy and smooth with a buttery graham cracker crust.</p>
+                <p><strong>Price:</strong> €20 | £18 | $22</p>
+                <button><a href="https://www.paymentlink.com/classic_cheesecake">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item" id="cheesecake2">
+                <img src="{{ url_for('static', filename='images/cheesecake2.jpg') }}" alt="Chocolate Cheesecake">
+                <h3>Chocolate Cheesecake</h3>
+                <p>Rich, indulgent chocolate cheesecake on a crunchy chocolate crust.</p>
+                <p><strong>Price:</strong> €22 | £20 | $24</p>
+                <button><a href="https://www.paymentlink.com/chocolate_cheesecake">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item" id="cheesecake3">
+                <img src="{{ url_for('static', filename='images/cheesecake3.jpg') }}" alt="Strawberry Cheesecake">
+                <h3>Strawberry Cheesecake</h3>
+                <p>A perfect blend of smooth cheesecake with fresh strawberry topping.</p>
+                <p><strong>Price:</strong> €21 | £19 | $23</p>
+                <button><a href="https://www.paymentlink.com/strawberry_cheesecake">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item" id="cheesecake4">
+                <img src="{{ url_for('static', filename='images/cheesecake4.jpg') }}" alt="Blueberry Cheesecake">
+                <h3>Blueberry Cheesecake</h3>
+                <p>Delicious cheesecake topped with a sweet blueberry compote.</p>
+                <p><strong>Price:</strong> €23 | £21 | $25</p>
+                <button><a href="https://www.paymentlink.com/blueberry_cheesecake">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item" id="cheesecake5">
+                <img src="{{ url_for('static', filename='images/cheesecake5.jpg') }}" alt="Peanut Butter Cheesecake">
+                <h3>Peanut Butter

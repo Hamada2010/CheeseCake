@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheeseCake</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('order') }}">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page Main Content -->
+    <header>
+        <h1>Welcome to CheeseCake!</h1>
+        <p>Explore our wide variety of delicious cheesecakes</p>
+    </header>
+
+    <!-- Varieties of Cheesecakes -->
+    <section class="varieties">
+        <h2>Our Cheesecake Varieties</h2>
+        <div class="cheesecake-list">
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake1.jpg') }}" alt="Classic Cheesecake">
+                <h3>Classic Cheesecake</h3>
+                <p>A timeless favorite, creamy and smooth with a buttery graham cracker crust.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake1">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake2.jpg') }}" alt="Chocolate Cheesecake">
+                <h3>Chocolate Cheesecake</h3>
+                <p>Rich, indulgent chocolate cheesecake on a crunchy chocolate crust.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake2">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake3.jpg') }}" alt="Strawberry Cheesecake">
+                <h3>Strawberry Cheesecake</h3>
+                <p>A perfect blend of smooth cheesecake with fresh strawberry topping.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake3">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake4.jpg') }}" alt="Blueberry Cheesecake">
+                <h3>Blueberry Cheesecake</h3>
+                <p>Delicious cheesecake topped with a sweet blueberry compote.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake4">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake5.jpg') }}" alt="Peanut Butter Cheesecake">
+                <h3>Peanut Butter Cheesecake</h3>
+                <p>Decadent peanut butter cheesecake on a crunchy cookie crust.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake5">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake6.jpg') }}" alt="Raspberry Cheesecake">
+                <h3>Raspberry Cheesecake</h3>
+                <p>A perfect balance of creamy cheesecake and tart raspberry topping.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake6">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake7.jpg') }}" alt="Mango Cheesecake">
+                <h3>Mango Cheesecake</h3>
+                <p>Refreshing mango cheesecake with a smooth, fruity topping.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake7">Order Now</a></button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake8.jpg') }}" alt="Caramel Cheesecake">
+                <h3>Caramel Cheesecake</h3>
+                <p>A rich and creamy cheesecake topped with sweet caramel sauce.</p>
+                <button><a href="{{ url_for('order') }}#cheesecake8">Order Now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="mailto:help@cheesecake.com">Need help? Contact us</a></p>
+    </footer>
+</body>
+</html>

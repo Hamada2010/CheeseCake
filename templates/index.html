@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheeseCake - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/order">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <h1>Welcome to CheeseCake!</h1>
+        <p>Your favorite destination for the best cheesecakes around!</p>
+
+        <!-- Cheesecake Varieties Section -->
+        <div class="cheesecake-list">
+            <h2>Our Cheesecake Varieties</h2>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake1.jpg') }}" alt="Classic Cheesecake">
+                <h3>Classic Cheesecake</h3>
+                <p>$20 / £15</p>
+                <button onclick="window.location.href='/order?cake=classic'">Order Now</button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake2.jpg') }}" alt="Berry Cheesecake">
+                <h3>Berry Cheesecake</h3>
+                <p>$22 / £16</p>
+                <button onclick="window.location.href='/order?cake=berry'">Order Now</button>
+            </div>
+            <div class="cheesecake-item">
+                <img src="{{ url_for('static', filename='images/cheesecake3.jpg') }}" alt="Chocolate Cheesecake">
+                <h3>Chocolate Cheesecake</h3>
+                <p>$25 / £18</p>
+                <button onclick="window.location.href='/order?cake=chocolate'">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="mailto:contact@cheesecake.com">Need help? Contact us</a></p>
+    </footer>
+</body>
+</html>
